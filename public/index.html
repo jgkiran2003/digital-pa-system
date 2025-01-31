@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling App Calendar JS</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Left column: originally "Upcoming Events" – now "Upcoming Tasks" label -->
+    <div id="eventsColumn">
+      <h2>Upcoming Tasks</h2>
+      <div id="taskListContainer"></div>
+    </div>
+
+    <!-- Center: Calendar container (unchanged) -->
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Back</button>
+          <button id="nextButton">Next</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <!-- Right column: Meetings -->
+    <div id="meetingsColumn">
+      <h2>Meetings</h2>
+      
+      <div id="meetingsListContainer"></div>
+    </div>
+
+    <!-- Modal: New Task (renamed from "New Event") -->
+    <div id="newEventModal">
+      <h2>New Task</h2>
+      <!-- form fields for a new task -->
+      <input id="taskSummaryInput" placeholder="Task Name"/>
+      <input id="taskDescriptionInput" placeholder="Description"/>
+      <input id="taskUsersInput" placeholder="Invite" type="email"/>
+      <input id="taskDateInput" placeholder="Deadline" type="datetime-local"/>
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <!-- Modal: Add Task directly to calendar -->
+    <div id="addEventModal">
+      <h2>New Task</h2>
+      <input id="taskSummaryInput2" placeholder="Task Name"/>
+      <input id="taskDescriptionInput2" placeholder="Description"/>
+      <input id="taskUsersInput2" placeholder="Invite" type="email"/>
+      
+      <button id="save2Button">Save</button>
+      <button id="cancel3Button">Cancel</button>
+    </div>
+
+    <!-- Delete modal (if you implement delete logic) -->
+    <div id="deleteEventModal">
+      <h2>Task</h2>
+      <p id="eventText"></p>
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <!-- CalendarEventModal: shown when day is clicked -->
+    <div id="CalendarEventModal">
+      <h2>Calendar Task</h2>
+      <button id="addButton">Add Task</button>
+      <button id="cancel2Button">Cancel</button>
+    </div>
+
+    <!-- Buttons to create tasks, meetings, and manage users -->
+    <div>
+      <button id="createEventButton">Create Task</button>
+      <button id="createMeetButton">Create Meeting</button>
+      <!-- Manage Users button -->
+      <button id="manageUsersButton" style="background-color:#92a1d1;">
+        Manage Users
+      </button>
+    </div>
+
+    <!-- Modal: New Meeting -->
+    <div id="newMeetingModal">
+      <h2>Meeting</h2>
+      <input id="meetSummaryInput" placeholder="Summary"/>
+      <input id="meetDescriptionInput" placeholder="Description"/>
+      <input id="meetUsersInput" placeholder="Invite" type="email"/>
+      <input id="meetDateInput" placeholder="Date" type="datetime-local"/>
+      <input id="meetDurationInput" placeholder="Duration" type="time"/>
+      <button id="saveCreateMeetButton">Save</button>
+      <button id="cancelCreateMeetButton">Cancel</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

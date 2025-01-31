@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Users</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color: #FFFCFF; font-family: sans-serif;">
+
+  <h1 style="color: #d36c6c; text-align: center;">Manage Users</h1>
+
+  <div style="text-align: center; margin-bottom: 20px;">
+    <button id="showCreateFormBtn" style="background-color:#92a1d1;">Create User</button>
+    <button onclick="window.location.href='index.html';" style="background-color:#d36c6c;">
+      Back to Calendar
+    </button>
+  </div>
+
+  <!-- Hidden user creation form -->
+  <div id="createUserForm" style="display:none; width: 300px; margin: 0 auto; 
+       padding: 15px; background-color: #e8f4fa; box-shadow: 0px 0px 3px gray;">
+    <h2 style="color: #247BA0;">New User</h2>
+    <input id="usernameInput" placeholder="Username" style="width:100%; margin-bottom:5px;"/>
+    <input id="emailInput" type="email" placeholder="Email" style="width:100%; margin-bottom:5px;"/>
+    <input id="passwordInput" type="password" placeholder="Password" style="width:100%; margin-bottom:5px;"/>
+    <input id="roleInput" placeholder="Role" style="width:100%; margin-bottom:5px;"/>
+    <input id="deptInput" placeholder="Department" style="width:100%; margin-bottom:5px;"/>
+    <button id="createUserBtn" style="background-color:#92a1d1;">Create</button>
+  </div>
+
+  <!-- Table of existing users -->
+  <table id="usersTable" border="1" style="margin: 20px auto; box-shadow: 0px 0px 3px gray;">
+    <thead style="background-color:#92a1d1; color:white;">
+      <tr>
+        <th>UID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Dept</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Populated by manage_users.js -->
+    </tbody>
+  </table>
+
+  <script src="manage_users.js"></script>
+</body>
+</html>
