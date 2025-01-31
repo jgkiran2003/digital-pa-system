@@ -1,7 +1,6 @@
 # Digital Personal Assistant System
 
 - [Digital Personal Assistant System](#digital-personal-assistant-system)
-  - [Prompt Selection](#prompt-selection)
   - [Introduction](#introduction)
   - [How to run this project](#how-to-run-this-project)
   - [Javascript Details](#javascript-details)
@@ -12,17 +11,13 @@
     - [queries.js](#queriesjs)
   - [References:](#references)
 
-## Prompt Selection
-
-Prompt: "Develop a cost-effective digital PA system for administrators to efficiently arrange and schedule meetings and automate tasks such as sending follow-up tasks to themselves or others, sending reminders, generating summaries of email threads, and arranging meetings."
-
 ## Introduction
 
-Welcome to our group's Personal Assistant System where we aim to implement a cost-effective yet efficient software that aims to arrange, schedule meetings while automating certain administrative tasks such as sending follow-up tasks and reminders.
+Welcome to our group's Personal Assistant System where we aim to implement a cost-effective yet efficient software that aims to arrange and schedule meetings.
 
 ## How to run this project
 
-A few ways to launch some unicorn and rainbows:  
+A few ways to launch:  
 
 1) Enter the project folder and either open `start.bat` (for Windows systems) or `start.sh`(for Unix/BSD/macOS or Linux systems) to launch the project.  
 2) Enter the Terminal and run `$ ./start.sh` or `$ node index.js`.  
