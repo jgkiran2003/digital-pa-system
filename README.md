@@ -1,6 +1,7 @@
 # Digital Personal Assistant System
 
 - [Digital Personal Assistant System](#digital-personal-assistant-system)
+  - [Pre-requisites](#pre-requisites)
   - [Introduction](#introduction)
   - [How to run this project](#how-to-run-this-project)
   - [Javascript Details](#javascript-details)
@@ -10,6 +11,20 @@
     - [~/clients/package.json](#clientspackagejson)
     - [queries.js](#queriesjs)
   - [References:](#references)
+
+## Pre-requisites
+
+Before you start, ensure you have the following installed on your system:
+
+- **[Node.js](https://nodejs.org/)** (LTS version recommended)
+- **npm** (comes with Node.js)
+
+### Check if Node.js and npm are installed
+Run the following command to check:
+```bash
+node -v
+npm -v
+```
 
 ## Introduction
 
