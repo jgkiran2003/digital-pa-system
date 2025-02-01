@@ -13,14 +13,15 @@
 
 ## Introduction
 
-Welcome to our group's Personal Assistant System where we aim to implement a cost-effective yet efficient software that aims to arrange and schedule meetings.
+Welcome to our Personal Assistant System where we aim to implement a cost-effective yet efficient software that aims to arrange and schedule meetings.
 
 ## How to run this project
 
 A few ways to launch:  
 
-1) Enter the project folder and either open `start.bat` (for Windows systems) or `start.sh`(for Unix/BSD/macOS or Linux systems) to launch the project.  
-2) Enter the Terminal and run `$ ./start.sh` or `$ node index.js`.  
+1) Enter terminal, navigate to the project directory.
+2) Run `$ npm install` to install relevant node_modules.
+3) Run `$ node index.js` to run website on local host.
 
 ## Javascript Details
 
