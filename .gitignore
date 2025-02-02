@@ -1,4 +1,5 @@
 node_modules
+schema.sql
 .env
 start.bat
 start.sh
