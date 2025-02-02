@@ -40,10 +40,6 @@ A few ways to launch:
 
 ## Javascript Details
 
-### testing.js
-
-This file is specifically for altering the database directly. It's not necessary to use this file.  
-
 ### ~/src/index.js
 
 The index.js file is the main javascript file that serves as the entry point of the application when launched. It is the first file that runs when the app is first launched, and it orchestrates the setup and operation of the application. It does these things:
